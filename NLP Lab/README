@@ -1,8 +1,8 @@
 The main one is tokenizer_Regex and the tokenizer_layman is the best one and is under development.
 
 # Some basic rules
-direct word lakho to direct word match thay jaay
-[] aama kai pan lakhe to direct match ni thay, aama pattern match kare
+if you write direct word then it will match directly
+[] here whatever you put inside will not directly matched it will first match the pattern and then the word inside the bracket will be matched
 [^0-9] = ^ this is negation symbol
 a? → a or empty
 a{3} means aaa like a 3 times
