@@ -78,11 +78,11 @@ def gujarati_sentence_tokenizer(text):
 
 # Example usage:
 if __name__ == "__main__":
-    with open("gu.txt", encoding="utf-8") as f:
+    with open("NLP Lab\gu.txt", encoding="utf-8") as f:
         text = f.read()
     sentences = gujarati_sentence_tokenizer(text)
     # Write sentences to a new file, each on a new line
-    with open("gu_sentences.txt", "w", encoding="utf-8") as out:
+    with open("NLP Lab\gu_sentences.txt", "w", encoding="utf-8") as out:
         for s in sentences:
             out.write(s + "\n")
     # --- Metrics calculation ---

@@ -32,13 +32,11 @@ def gujarati_word_tokenizer(text):
     return flat_words
 
 if __name__ == "__main__":
-    with open("gu.txt", encoding="utf-8") as f:
+    with open("NLP Lab\gu.txt", encoding="utf-8") as f:
         text = f.read()
     words = gujarati_word_tokenizer(text)
-    with open("gu_words.txt", "w", encoding="utf-8") as out:
+    with open("NLP/NLP Lab/gu_words.txt", "w", encoding="utf-8") as out:
         for word in words:
-            # Only start a new line for sentence-ending punctuation, not for numbers with .
-            # If word matches English number followed by dot, do not end line
             if re.match(r'^\d+\.$', word):
                 out.write(word + ' ')
             elif word in ['.', '।', '\u0964', '…', '...']:
