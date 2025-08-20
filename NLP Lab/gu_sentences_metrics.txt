@@ -1,0 +1,6 @@
+Total sentences: 8
+Total words: 1254
+Total characters: 7594
+Words per sentence: 156.75
+Average characters per word: 6.06
+Type-Token Ratio (TTR): 0.7105
